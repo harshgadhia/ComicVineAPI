@@ -1,0 +1,7 @@
+{
+  "api": {
+    "base":"http://www.comicvine.com/api",
+    "key":"b7ef2256f63411a5e25eb8191eb386dda4e37b49",
+    "format" : "json"
+  }
+}

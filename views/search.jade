@@ -1,0 +1,28 @@
+
+extends master
+
+block content
+  .container
+
+    .container(ng-controller="comicController", style="margin-top:42%;")
+      
+      .col-md-12
+      .col-md-11
+        form
+          .form-group
+            input.form-control.text-center(type="text", placeholder="Search a Comic Character" ng-model="title")
+      .col-md-1
+          button.btn.btn-info.pull-left(type="submit", ng-click="searchComics()") search
+
+      .clearfix
+
+      .col-md-12 
+        h4(ng-if="comic.name!=null") {{comic.name}}
+        div {{comic.deck}}
+        p
+        div
+          img(src = '{{comicImg}}')
+        div {{gender}}
+
+      .col-md-12 
+        h6 {{noresult}}
